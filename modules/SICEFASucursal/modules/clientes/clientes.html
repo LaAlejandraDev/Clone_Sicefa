@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="/web/modules/SICEFASucursal/modules/clientes/css/clientes.css">
+<link rel="stylesheet" href="/web/Style/css/bootstrap.min.css">
+<script src="/web/Style/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Clientes</title>
+<div class="container-fluid row d-flex justify-content-center m-2 mt-5 back">
+    <div class="card-color col-lg-5 m-2 p-4">
+        <div class="card col-12 p-2">
+            <h2 class="h3">Gestión de Clientes</h2>
+            <div class="row g-2 text">
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtIdCliente">Número único de cliente</label>
+                    <input type="text" id="txtIdCliente" readonly class="mt-2 id-color">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtNombreCliente" class="mt-2">Nombre(s):</label>
+                    <input type="text" id="txtNombreCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtApellidoPaCliente" class="mt-2">Apellido Paterno:</label>
+                    <input type="text" id="txtApellidoPaCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtApellidoMaCliente" class="mt-2">Apellido Materno:</label>
+                    <input type="text" id="txtApellidoMaCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtRfcCliente" class="mt-2 col-12">RFC:</label>
+                    <input type="text" id="txtRfcCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtMovilCliente" class="mt-2">Teléfono móvil:</label>
+                    <input type="text" id="txtMovilCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtFijoCliente" class="mt-2 mx-1">Teléfono Fijo:</label>
+                    <input type="text" id="txtFijoCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtCorreoCliente" class="mt-2">Correo Electrónico:</label>
+                    <input type="text" id="txtCorreoCliente" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <select name="txtGenero" id="txtGenero" required class="form-select-sm col-md-6 col-sm-12 select-color mt-4">
+                        <option value="" disabled selected><strong>Género</strong></option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="/web/modules/SICEFASucursal/modules/clientes/img/clientes.webp" alt="clientes" class="img-fluid img-space">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4 container-fluid">
+                <button class="button-eliminar mt-4" onclick="deleteCliente()" id="btnDelete" disabled>Eliminar</button>
+                <button class="button-limpiar mt-4" onclick="cleanCliente()" id="btnClean">Limpiar</button>
+                <button class="button-actualizar mt-4" onclick="updateCliente()" id="btnUpdate" disabled>Actualizar</button>
+                <button class="button-registrar mt-4" onclick="addCliente()" id="btnAdd">Registrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-color-2 col-lg-6 col-sm-12 m-2 d-block">
+        <div class="card p-4 m-2">
+            <div class="d-flex m-3 search col-md-6 col-sm-12">
+                <label for="txtBuscarCliente" class="form-label mx-3">Buscar Cliente: </label>
+                <input type="text" id="txtBuscarCliente">
+                <button class="btn-buscar mx-2" onclick="searchCliente();">Buscar</button>
+            </div>
+            <div class="table-responsive">
+                <table class="table-extent">
+                    <thead class="table-style text-center">
+                        <tr>
+                            <th class="table-space">ID</th>
+                            <th class="table-space">Estátus</th>
+                            <th class="table-space">Nombre</th>
+                            <th class="table-space">Apellidos</th>
+                            <th class="table-space">Género</th>
+                            <th class="table-space">Teléfono Movil</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblClientes">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

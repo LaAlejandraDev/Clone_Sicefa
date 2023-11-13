@@ -1,0 +1,24 @@
+[
+    {
+        "idPedido": "4561",
+        "estatusPedido":"1",
+        "medicamento": "Paracetamol",
+        "cantidadPedido":3,
+        "sicefaOrigen":"Sur"
+    },
+    {
+        "idPedido": "3521",
+        "estatusPedido":"1",
+        "medicamento": "Ibuprofeno",
+        "cantidadPedido":3,
+        "sicefaOrigen":"Sur"
+    },
+
+    {
+        "idPedido": "1589",
+        "estatusPedido":"0",
+        "medicamento": "Paracetamol",
+        "cantidadPedido":3,
+        "sicefaOrigen":"Sur"
+    }
+]

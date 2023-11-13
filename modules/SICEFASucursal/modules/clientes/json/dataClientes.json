@@ -1,0 +1,74 @@
+[
+    {
+        "idCliente": "2468",
+        "nombreCliente": "Oliver",
+        "apellidoPaternoCliente": "González",
+        "apellidoMaternoCliente": "Hernández",
+        "rfc": "OGHE850512KU1",
+        "telefonoFijoCliente": "5551112233",
+        "telefonoMovilCliente": "5558889999",
+        "correoElectronicoCliente": "oliver.gonzalez@example.com",
+        "estatusCliente": "1",
+        "generoCliente": "Masculino"
+    },
+    {
+        "idCliente": "1357",
+        "nombreCliente": "Sophie",
+        "apellidoPaternoCliente": "Martínez",
+        "apellidoMaternoCliente": "Ramírez",
+        "rfc": "SOMR840704KU2",
+        "telefonoFijoCliente": "5554445566",
+        "telefonoMovilCliente": "5557778888",
+        "correoElectronicoCliente": "sophie.martinez@example.com",
+        "estatusCliente": "0",
+        "generoCliente": "Femenino"
+    },
+    {
+        "idCliente": "9876",
+        "nombreCliente": "Max",
+        "apellidoPaternoCliente": "Rodríguez",
+        "apellidoMaternoCliente": "López",
+        "rfc": "MARL930302KU3",
+        "telefonoFijoCliente": "5553334455",
+        "telefonoMovilCliente": "5559998888",
+        "correoElectronicoCliente": "max.rodriguez@example.com",
+        "estatusCliente": "1",
+        "generoCliente": "Masculino"
+    },
+    {
+        "idCliente": "5432",
+        "nombreCliente": "Isabella",
+        "apellidoPaternoCliente": "Sánchez",
+        "apellidoMaternoCliente": "Pérez",
+        "rfc": "ISAP920220KU4",
+        "telefonoFijoCliente": "5552223344",
+        "telefonoMovilCliente": "5556667777",
+        "correoElectronicoCliente": "isabella.sanchez@example.com",
+        "estatusCliente": "0",
+        "generoCliente": "Femenino"
+    },
+    {
+        "idCliente": "1111",
+        "nombreCliente": "Alexander",
+        "apellidoPaternoCliente": "Gómez",
+        "apellidoMaternoCliente": "Hernández",
+        "rfc": "AGHA790506KU5",
+        "telefonoFijoCliente": "5557778899",
+        "telefonoMovilCliente": "5552221111",
+        "correoElectronicoCliente": "alexander.gomez@example.com",
+        "estatusCliente": "1",
+        "generoCliente": "Masculino"
+    },
+    {
+        "idCliente": "9999",
+        "nombreCliente": "Luna",
+        "apellidoPaternoCliente": "Ramírez",
+        "apellidoMaternoCliente": "López",
+        "rfc": "LRLL850209KU6",
+        "telefonoFijoCliente": "5553336677",
+        "telefonoMovilCliente": "5559991111",
+        "correoElectronicoCliente": "luna.ramirez@example.com",
+        "estatusCliente": "0",
+        "generoCliente": "Femenino"
+    }
+]

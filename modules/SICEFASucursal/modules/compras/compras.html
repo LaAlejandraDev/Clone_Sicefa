@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="/web/modules/SICEFASucursal/modules/compras/css/compras.css">
+<link rel="stylesheet" href="/web/Style/css/bootstrap.min.css">
+<script src="/web/Style/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Empleados</title>
+<div class="container-fluid row d-flex justify-content-center m-2 mt-5 back">
+    <div class=" card-color col-lg-5 m-2  p-4">
+        <div class="card col-12 p-2">
+            <h2 class="h3">Gestión Pedidos</h2>
+            <div class="row g-2 text">
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <label for="txtIdPedido">Número único de Pedido:</label>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <input type="text" id="txtIdPedido" readonly class="mt-2 id-color">
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <label for="txtMedicamento" class="mt-2">Medicamento:</label>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <input type="text" id="txtMedicamento" required class="mt-4 input-card input">
+                </div>
+
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <label for="txtIdCantidad" class="mt-2">Cantidad:</label>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <input type="number" id="txtIdCantidad" required class="mt-4 input-card input">
+                </div>
+
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <label for="txtSicefaPedido" class="mt-2">SICEFA:</label>
+                </div>
+                <div class="col-md-12 col-sm-12 d-flex justify-content-center  align-items-center">
+                    <input type="text" id="txtSicefaPedido" required class="mt-4 input-card input">
+                </div>
+
+                
+
+               
+                
+                <div class="col-md-6 col-sm-12">
+                    <img src="/web/modules/SICEFASucursal/modules/compras/img/pedido.webp" alt="medicamentos" class="img-fluid img-space">
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-4 container-fluid">
+                <button class="button-eliminar mt-4" onclick="delateCompra()" id="btnDelete"
+                    disabled>Eliminar</button>
+                <button class="button-limpiar mt-4" onclick="cleanCompra()"
+                    id="btnClean">Limpiar</button>
+                <button class="button-actualizar mt-4" onclick="updateCompra()" id="btnUpdate"
+                    disabled>Actualizar</button>
+                <button class="button-registrar mt-4" onclick="addCompra()"
+                    id="btnAdd">Registrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-color-2 col-lg-6 col-sm-12 m-2 d-block">
+        <div class="card  p-4 m-2">
+            <div class=" d-flex m-3 search col-md-6 col-sm-12">
+                <label for="txtBuscarPedido" class="form-label mx-3">Buscar Pedido: </label>
+                <input type="text" id="txtBuscarPedido">
+                <button class="btn-buscar mx-2" onclick="searchPedido();">Buscar</button>
+            </div>
+           
+            <div class="table-responsive">
+                <table class="table-extent">
+                    <thead class="table-style text-center">
+                        <tr>
+                            <th class="table-space">ID</th>
+                            <th class="table-space">Estátus</th>
+                            <th class="table-space">Medicamento</th>
+                            <th class="table-space">Cantidad</th>
+                            <th class="table-space">SICEFA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblPedido">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/web/modules/SICEFASucursal/modules/compras/js/controllerCompras.js"></script>  

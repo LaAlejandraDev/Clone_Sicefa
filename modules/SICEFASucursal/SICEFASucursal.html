@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="../../Style/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../Css/SICEFASucursal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css">
+
+
+    <title>SICEFA sucursal</title>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/web/index.html">
+                    <img src="../../Img/logo.svg" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top img-fluid">Medicamos Tu Vida
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" id="user-control">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5 m-1"></i>
+                                <span class="h5">Joel Briones</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown" id="operations-menu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Menu de operaciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" onclick="setHome()">Home</a></li>
+                                <li><a class="dropdown-item" onclick="cargarModuloEmpleados()">Gestion de
+                                        Empleados</a>
+                                </li>
+                                <li><a class="dropdown-item" onclick="cargarModuloClientes()">Gestion de
+                                        Clientes</a></li>
+                                <li><a class="dropdown-item" onclick="cargarModuloVentas()">Gestión de Ventas:</a></li>
+                                <li><a class="dropdown-item" onclick="cargarModuloPedidos()">Gestión de Pedidos:</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html"><i
+                                class="bi bi-box-arrow-left m-1"></i>Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row h-100" id="sideNav">
+            <div class="col-lg-2 bg-dark text-white text-center h-100" id="control-container">
+                <div class="container-fluid py-5">
+                    <span class="fs-4">Menu de operaciones</span>
+                    <span class="fs-6">SICEFA Sucursal</span>
+                    <div class="container-fluid py-2">
+                        <nav class="navbar bg-dark" data-bs-theme="dark">
+                            <div class="container-fluid justify-content-center">
+                                <div class="" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link pointer" onclick="setHome()">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pointer" onclick="cargarModuloEmpleados()">Gestion de
+                                                Empleados</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pointer" onclick="cargarModuloClientes()">Gestion de
+                                                Clientes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pointer" onclick="cargarModuloVentas()">Gestion de
+                                                Ventas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link pointer" onclick="cargarModuloPedidos()">Gestion de
+                                                Pedidos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-fluid py-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../SICEFA_Central/SICEFA_Central_Home.html" class="nav-link">SICEFA Central<i
+                                    class="bi bi-arrow-right m-1"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-5 m-1"></i>
+                                <span class="fs-6">Joel Briones</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10" id="master-container">
+                <div class="container-fluid p-2">
+                    <h1 class="display-1 text-center">SICEFA Sucursal</h1>
+                </div>
+                <div class="container-fluid text-center">
+                    <img src="../../Img/sucursal.webp" alt="" class="img-fluid" width="400px" height="400px">
+                </div>
+                <div class="container-fluid py-5">
+                    <div class="container-fluid">
+                        <h2 class="fs-2">Información general</h2>
+                        <section class="container-fluid col-md-12">
+                            <div class="col-md-12 container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 container-fluid mt-5 text-center">
+                                        <h2 class="h3 title-color">¡Bienvenido a SICEFA Sucursal!</h2>
+                                        <p class="text-color">¡Hola! Te doy la bienvenida a la plataforma SICEFA
+                                            Sucursal, una solución integral para la administración y operación de tu
+                                            farmacia, Medicamos Tu Vida S.A. Con un enfoque en la gestión local, podrás
+                                            controlar eficientemente tu sucursal, brindar un servicio excepcional y
+                                            optimizar la gestión interna.
+                                            En nuestra plataforma.
+                                        <p class="text-color">Podrás realizar tareas como:</p>
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>Gestión de Empleados</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gestión de Clientes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Registro y Gestión de Pedidos de Compra</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Consulta y Búsqueda de Medicamentos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Registro de Ventas</td>
+                                            </tr>
+                                        </table>
+                                        </p>
+
+                                        <p class="text-color">
+                                            Lleva tu farmacia al siguiente nivel con SICEFA Sucursal. ¡Bienvenido a una
+                                            nueva era en la gestión farmacéutica!
+                                        </p>
+                                        <p class="instructions">Para poder realizarlo debes oprimir el menu desplegable
+                                            llamado "Menu de operaciones" y continuar con la
+                                            navegación.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 container-fluid heart d-flex justify-content-center">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="container-fluid text-center py-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 class="fs-3">Misión</h2>
+                                <p class="text-justify">En Medicamos tu Vida S.A., nuestra misión es proporcionar
+                                    medicamentos genéricos y de patente de alta calidad, garantizando el acceso a
+                                    tratamientos efectivos para mejorar la salud y el bienestar de nuestros clientes.
+                                    Buscamos ser líderes en el mercado farmacéutico, brindando un servicio excepcional,
+                                    impulsando la innovación tecnológica y contribuyendo al desarrollo sostenible de la
+                                    comunidad en la que operamos.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="fs-3">Visión</h2>
+                                <p class="text-justify">Nuestra visión es ser la farmacéutica más confiable y preferida
+                                    por los clientes en el mercado estatal y expandir nuestra presencia a nivel
+                                    nacional. Aspiramos a ser reconocidos por nuestra excelencia en el servicio, nuestro
+                                    compromiso ético y social, y por ofrecer una amplia gama de medicamentos a precios
+                                    accesibles. Buscamos ser una empresa líder en innovación tecnológica y un referente
+                                    en la industria farmacéutica.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="fs-3">Valores</h2>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Compromiso:</strong> Salud y bienestar de nuestros clientes,
+                                                servicio excepcional.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Ética:</strong> Conducta ética y cumplimiento de regulaciones.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Innovación:</strong> Soluciones tecnológicas para eficiencia.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Responsabilidad Social:</strong> Desarrollo sostenible y cuidado
+                                                del medio ambiente.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Trabajo en equipo:</strong> Colaboración, respeto y confianza.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Calidad:</strong> Productos y servicios de alta calidad.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Accesibilidad:</strong> Medicamentos accesibles para todos.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/web/modules/SICEFASucursal/js/SICEFASucursal.js"></script>
+<script src="../SICEFASucursal/modules/empleados/js/controllerEmpleados.js"></script>
+<script src="modules/clientes/js/controllerClientes.js"></script>
+<script src="modules/ventas/js/contrllerVentas.js"></script>
+<script src="modules/compras/js/controllerCompras.js"></script>
+
+
+</html>

@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/web/modules/SICEFASucursal/modules/empleados/css/empleados.css">
+<link rel="stylesheet" href="/web/Style/css/bootstrap.min.css">
+<script src="/web/Style/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<title>Empleados</title>
+<div class="container-fluid row d-flex justify-content-center m-2 mt-5 back">
+    <div class=" card-color col-lg-5 m-2  p-4">
+        <div class="card col-12 p-2">
+            <h2 class="h3">Gestión Empleados</h2>
+            <div class="row g-2 text">
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtIdEmpleado">Número único de empleado</label>
+                    <input type="text" id="txtIdEmpleado" readonly class="mt-2 id-color">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtNombreEmpleado" class="mt-2">Nombre(s):</label>
+                    <input type="text" id="txtNombreEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtApellidoPaEmpleado" class="mt-2">Apellido Paterno:</label>
+                    <input type="text" id="txtApellidoPaEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtApellidoMaEmpleado" class="mt-2">Apellido Materno:</label>
+                    <input type="text" id="txtApellidoMaEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtRfcEmpleado" class="mt-2 col-12">RFC:</label>
+                    <input type="text" id="txtRfcEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtMovilEmpleado" class="mt-2">Teléfono móvil:</label>
+                    <input type="text" id="txtMovilEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtFijoEmpleado" class="mt-2 mx-1">Teléfono Fijo:</label>
+                    <input type="text" id="txtFijoEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="txtCorreoEmpleado" class="mt-2">Correo Electrónico:</label>
+                    <input type="text" id="txtCorreoEmpleado" required class="mt-4 input-card">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <select name="txtGenero" id="txtGenero" required
+                        class="form-select-sm col-md-6 col-sm-12 select-color mt-4">
+                        <option value="" disabled selected><strong>Género</strong></option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="/web/modules/SICEFASucursal/modules/empleados/img/empleados.webp" alt="medicamentos"
+                        class="img-fluid img-space">
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center mt-4 container-fluid">
+                <button class="button-eliminar mt-4" onclick="delateEmpleado()" id="btnDelete"
+                    disabled>Eliminar</button>
+                <button class="button-limpiar mt-4" onclick="cleanEmpleado()" id="btnClean">Limpiar</button>
+                <button class="button-actualizar mt-4" onclick="updateEmpleado()" id="btnUpdate"
+                    disabled>Actualizar</button>
+                <button class="button-registrar mt-4" onclick="addEmpleado()" id="btnAdd">Registrar</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-color-2 col-lg-6 col-sm-12 m-2 d-block">
+        <div class="card  p-4 m-2">
+            <div class=" d-flex m-3 search col-md-6 col-sm-12">
+                <label for="txtBuscarEmpleado" class="form-label mx-3">Buscar Empleado: </label>
+                <input type="text" id="txtBuscarEmpleado">
+                <button class="btn-buscar mx-2" onclick="searchEmpleado();">Buscar</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table-extent">
+                    <thead class="table-style text-center">
+                        <tr>
+                            <th class="table-space">ID</th>
+                            <th class="table-space">Estátus</th>
+                            <th class="table-space">Nombre</th>
+                            <th class="table-space">Apellidos</th>
+                            <th class="table-space">Género</th>
+                            <th class="table-space">Teléfono Movil</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblEmpleados">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/web/modules/SICEFASucursal/modules/empleados/js/controllerEmpleados.js" type="module"></script>

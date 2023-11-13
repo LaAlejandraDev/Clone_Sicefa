@@ -1,0 +1,38 @@
+[
+    {
+        "idEmpleado": "4782",
+        "nombreEmpleado": "Sophia",
+        "apellidoPaternoEmpleado": "Martínez",
+        "apellidoMaternoEmpleado": "García",
+        "rfc": "MAGS851019KU7",
+        "telefonoFijoEmpleado": "5551234567",
+        "telefonoMovilEmpleado": "5559876543",
+        "correoElectronicoEmpleado": "sophia.martinez@example.com",
+        "estatusEmpleado": "1",
+        "generoEmpleado": "Femenino"
+    },
+    {
+        "idEmpleado": "9823",
+        "nombreEmpleado": "Liam",
+        "apellidoPaternoEmpleado": "Rodríguez",
+        "apellidoMaternoEmpleado": "López",
+        "rfc": "ROLI851019KU7",
+        "telefonoFijoEmpleado": "5555555555",
+        "telefonoMovilEmpleado": "5554444444",
+        "correoElectronicoEmpleado": "liam.rodriguez@example.com",
+        "estatusEmpleado": "0",
+        "generoEmpleado": "Masculino"
+    },
+    {
+        "idEmpleado": "7510",
+        "nombreEmpleado": "Emma",
+        "apellidoPaternoEmpleado": "González",
+        "apellidoMaternoEmpleado": "Hernández",
+        "rfc": "GOHE851019KU7",
+        "telefonoFijoEmpleado": "5557778888",
+        "telefonoMovilEmpleado": "5551112222",
+        "correoElectronicoEmpleado": "emma.gonzalez@example.com",
+        "estatusEmpleado": "1",
+        "generoEmpleado": "Femenino"
+    }
+]

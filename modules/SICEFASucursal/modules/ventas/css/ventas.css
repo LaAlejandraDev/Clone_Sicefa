@@ -1,0 +1,201 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+}
+
+main {
+    height: 95%;
+    width: 100%;
+}
+.input{
+    width: 90%;
+}
+
+
+.nav-space{
+    margin-top: 20%;
+}
+
+.id-color{
+    font-weight: bold;
+    background-color: #8af264;
+}
+
+.input-card {
+    background-color: #c0f2c5;
+    padding: 2px;
+    border-radius: 3px;
+}
+.input-card-venta {
+    background-color: #83f660;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.btn-buscar {
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    background-color: #9eeaa7;
+}
+
+.table-extent{
+    width: 100%;
+    height: 100%;
+}
+
+.table-style {
+    margin: 15px;
+    padding: 5px;
+    background-color: #2fb840;
+}
+.table-space{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.table-style-ventas{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 15px;
+    padding: 5px;
+    background-color: #c0f2c5;
+}
+
+
+.table-style-empleados:hover{
+ background-color: #56d265;
+}
+
+
+
+
+.button-eliminar:not(:disabled) {
+    width: 100%;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ff9e9e;
+}
+.button-eliminar:hover:not(:disabled) {
+    color: white;
+    background-color: #ea1818;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .button-eliminar:not(:disabled){
+        font-size: 10px;
+        margin: none;
+        padding: none;
+    }
+}@media (min-width: 300px) and (max-width: 700px){
+    .button-eliminar{
+        font-size: 8px;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+.button-limpiar:not(:disabled) {
+    width: 100%;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #dced22;
+}
+.button-limpiar:hovernot(:disabled) {
+    color: white;
+    background-color: #7e6b15;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .button-limpiar:not(:disabled){
+        font-size: 10px;
+        margin: none;
+        padding: none;
+    }
+}@media (min-width: 300px) and (max-width: 700px){
+    .button-limpiar{
+        font-size: 8px;
+        margin-bottom: 2%;
+    }
+}
+
+.button-actualizar:not(:disabled) {
+    width: 100%;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #85d4f4;
+}
+.button-actualizar:hover:not(:disabled) {
+    color: white;
+    background-color: #0f5a7d;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .button-actualizar{
+        font-size: 10px;
+        margin: none;
+        padding: none;
+    }
+}@media (min-width: 300px) and (max-width: 700px){
+    .button-actualizar{
+        font-size: 8px;
+        margin-bottom: 2%;
+    }
+}
+
+.button-registrar:not(:disabled) {
+    width: 100%;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8af264;
+}
+.button-registrar:hover:not(:disabled) {
+    color: white;
+    background-color: #226212;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .button-registrar:not(:disabled){
+        font-size: 10px;
+        margin: none;
+        padding: none;
+    }
+}@media (min-width: 300px) and (max-width: 700px){
+    .button-registrar{
+        font-size: 8px;
+        margin-bottom: 2%;
+    }
+}
+    
+
+.card-color{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #b7fbb7;
+}
+
+.card-color-2{
+    border-radius: 10px;
+    background-color: #ddeafc;
+}
+
+.img-space{
+    width: 40%;
+    height: 40%;
+}

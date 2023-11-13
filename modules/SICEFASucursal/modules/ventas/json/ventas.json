@@ -1,0 +1,29 @@
+[
+    {
+        "idVenta": "450",
+        "medicamento": "Paracetamol",
+        "idEmpleado": "4782",
+        "idCliente": "2468",
+        "cantidad": 2,
+        "total": 21.98,
+        "precioUnitario": 10.99
+    },
+    {
+        "idVenta": "450",
+        "medicamento": "Ibuprofeno",
+        "idEmpleado": "9823",
+        "idCliente": "2468",
+        "cantidad": 2,
+        "total": 17.5,
+        "precioUnitario": 8.75
+    },
+    {
+        "idCliente": "9876",
+        "idVenta": "1357",
+        "medicamento": "Loratadina",
+        "idEmpleado": "7510",
+        "cantidad": 2,
+        "total": 25,
+        "precioUnitario": 12.50
+    }
+]
